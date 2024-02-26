@@ -12,7 +12,7 @@
         "jiraTeamId": "329b0dcd-8583-40c4-96f0-fcd763d9eca8"
     },
     "monitoring": {
-        "image": "apache:2.4",
+        "image": "httpd:2.4.58",
         "jiraTeamId": "588e4ad4-a0c6-4985-8b2b-6e643f93a503"
     }
 }
