@@ -47,3 +47,11 @@ jobs:
           JIRA_DOMAIN: ${{ vars.JIRA_DOMAIN }}
           JIRA_EMAIL: ${{ vars.JIRA_EMAIL }}
           JIRA_TOKEN: ${{ secrets.JIRA_TOKEN }}
+
+      - name: Expose SBOMs as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: sboms
+          path: sbom/
+          if-no-files-found: error
+          compression-level: 9 # JSON compresses nicely :-D
