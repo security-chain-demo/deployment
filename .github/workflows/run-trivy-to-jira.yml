@@ -24,7 +24,7 @@ jobs:
         run: echo "$(pwd)" >> $GITHUB_PATH
 
       - name: Synchronize Trivy result to JIRA
-        uses: security-chain-demo/github-actions/.github/actions/sync-trivy-to-jira@master
+        uses: security-chain-demo/github-actions/.github/actions/sync-trivy-to-jira@feature/refactoring-modules
         with:
           services: services.json
           min_severity: ${{ vars.MIN_SEVERITY }}
